@@ -27,17 +27,18 @@ public class LoopFun
       public String acronym(String phrase) {
         String s = "";
         int length = phrase.length();
-        for (int i = 0; i <= length; i++){
+        String initial = (char)(phrase.charAt(0)) + "";
+        for (int i = 1; i <= length; i++){
         char c = (char)(phrase.charAt(i - 1));
         String prev = c + "";
-        if (i == 0 || prev.equals(" ")){
+        if (prev.equals(" ")){
             s += (char)(phrase.charAt(i));
         } else {
             continue;
         }
     }
     String result = s.toUpperCase();
-          return result;
+          return initial.toUpperCase() + result;
         
     }
 
