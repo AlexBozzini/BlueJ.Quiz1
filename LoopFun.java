@@ -25,11 +25,9 @@ public class LoopFun
        * @return Upper case string of the first letter of each word
        */
       public String acronym(String phrase) {
-          String [] splitString = phrase.split("");
-          
-          
-         return null;
-      }
+        return null;
+        
+    }
 
       /**
        * To prevent anyone from reading our messages, we can encrypt it so it will only be readable by its
@@ -45,8 +43,8 @@ public class LoopFun
        */
       public String encrypt(String word) {
           String s = "";
-          int len = word.length();
-          for (int x = 0; x < len; x++){
+          int length = word.length();
+          for (int x = 0; x < length; x++){
               char c = (char)(word.charAt(x) + 3);
               if (c > 'z'){
                   s += (char)(word.charAt(x) - (26 - 3));
