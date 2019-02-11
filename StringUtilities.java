@@ -48,8 +48,10 @@ public class StringUtilities {
      * @return `value` with char of value `charToRemove` removed
      */
     public String removeCharacter(String value, Character charToRemove) {
-        return null;
-    }
+        String c = charToRemove + "";
+        String newString = value.replaceAll(c,"");
+        return newString;
+}
 
     /**
      * @param sentence String delimited by spaces representative of a sentence
